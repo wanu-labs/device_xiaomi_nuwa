@@ -50,3 +50,6 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Inherit from the proprietary version
 $(call inherit-product, vendor/xiaomi/nuwa/nuwa-vendor.mk)
+
+# Miui Camera
+$(call inherit-product-if-exists, vendor/xiaomi/camera/miuicamera.mk)
