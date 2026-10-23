@@ -8,6 +8,9 @@
 TARGET_HAS_UDFPS := true
 $(call inherit-product, device/xiaomi/sm8550-common/common.mk)
 
+# Miui Camera
+$(call inherit-product-if-exists, vendor/xiaomi/camera/miuicamera.mk)
+
 # Audio
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/mixer_paths_kalama_mtp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_kalama/mixer_paths_kalama_mtp.xml \
